@@ -206,9 +206,6 @@ body {
   width: 20px;
   height: 20px;
   margin-right: 10px;
-}
-
-.post:last-child {
   margin-bottom: 18px;
 }
 
@@ -310,6 +307,10 @@ body {
   display: none !important;
 }
 
+.display-none{
+  display: none;
+}
+
 @media (max-width: 935px) {
   .sidebar {
     display: none;
@@ -323,6 +324,7 @@ body {
     justify-content: center;
     width: 100%;
   }
+
 }
 
 @media (max-width: 614px) {

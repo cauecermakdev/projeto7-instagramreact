@@ -1,10 +1,11 @@
-import Corpo from './Corpo'
-import NavBar from './NavBar' 
-
+/* import Corpo from './Corpo'
+import NavBar from './NavBar' */
+/* 
 import ReactDOM from "react-dom";
 
 export default function App(){
-    return (
+
+    return(
         <div>
             <NavBar/>
             <Corpo/> 
@@ -12,4 +13,6 @@ export default function App(){
     );
 }
 
-ReactDOM.render(<App />, document.querySelector(".root"));
+ReactDOM.render(<App />, document.querySelector(".root")); */
+
+
