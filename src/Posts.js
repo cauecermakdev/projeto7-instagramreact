@@ -1,3 +1,5 @@
+
+
 import React from "react";
 
 function Topo_post(props) {
@@ -16,10 +18,23 @@ function Topo_post(props) {
 
 function Post(props) {
   const [clicked, setClicked] = React.useState(false);
+  const [liked, setLiked] = React.useState(false);
+  const[curtidas,setCurtidas] = React.useState(props.n_curtidas);
 
   function save(){
     //alert(!clicked);
     setClicked(!clicked);
+  }
+
+  function like(){
+    setLiked(!liked);
+    
+    if(typeof(curtidas) === "string"){
+      {liked ? setCurtidas(Number(curtidas.replace(".",""))-1) : setCurtidas(Number(curtidas.replace(".",""))+1)};  
+    }else{
+      {liked ? setCurtidas(curtidas-1) : setCurtidas(curtidas+1)};  
+    }
+
   }
 
   return (
@@ -34,7 +49,8 @@ function Post(props) {
       <div className="fundo">
         <div className="acoes">
           <div>
-            <ion-icon name="heart-outline"></ion-icon>
+            <ion-icon onClick = {like} class = {liked?"display-none":"md hydrated"} name="heart-outline"></ion-icon>
+            <ion-icon onClick = {like} class = {liked?"md hydrated":"display-none"}  name="heart"></ion-icon>
             <ion-icon name="chatbubble-outline"></ion-icon>
             <ion-icon name="paper-plane-outline"></ion-icon>
           </div>
@@ -47,7 +63,7 @@ function Post(props) {
         <div className="curtidas">
           <img src={props.img_curtidas} />
           <div className="texto">
-            Curtido por <strong>{props.txt_curtidas}</strong> e <strong>outras {props.n_curtidas} pessoas</strong>
+            Curtido por <strong>{props.txt_curtidas}</strong> e <strong>outras {curtidas} pessoas</strong>
           </div>
         </div>
       </div>
@@ -89,7 +105,6 @@ export default function Posts() {
       img_curtidas: "assets/img/adorable_animals.svg",
       txt_curtidas: "adorable_animals",
       n_curtidas: "99.159"
-
     },
 
 

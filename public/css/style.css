@@ -130,6 +130,7 @@ body {
   border-radius: 50%;
 }
 
+
 .story .usuario {
   width: 66px;
   overflow: hidden;
@@ -392,4 +393,24 @@ body {
     position: relative;
     top: 4px;
   }
+}
+
+/*add by caue*/
+.usuario ion-icon{
+  font-size:25px;
+  color:#333333;
+}
+
+.usuario > div:first-child{
+  display:flex;
+  align-items: center;
+}
+
+.usuario{
+  display:flex;
+  justify-content: space-between;
+}
+
+.acoes div:first-child ion-icon:nth-child(2){
+  color:red;
 }
