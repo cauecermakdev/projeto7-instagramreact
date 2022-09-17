@@ -396,17 +396,17 @@ body {
 }
 
 /*add by caue*/
-.usuario ion-icon{
+.sidebar .usuario ion-icon{
   font-size:25px;
   color:#333333;
 }
 
-.usuario > div:first-child{
+.sidebar .usuario > div:first-child{
   display:flex;
   align-items: center;
 }
 
-.usuario{
+.sidebar .usuario{
   display:flex;
   justify-content: space-between;
 }
