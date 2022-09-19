@@ -43,7 +43,7 @@ function Post(props) {
       <Topo_post img_user = {props.img_user} user_name = {props.user_name}/>
 
       <div className="conteudo">
-        <img src={props.img_conteudo} />
+        <img onDoubleClick = {like} src={props.img_conteudo} />
       </div>
 
       <div className="fundo">
@@ -88,7 +88,7 @@ export default function Posts() {
       //curtidas
       img_curtidas: "assets/img/respondeai.svg",
       txt_curtidas: "respondeai",
-      n_curtidas: "101.523"
+      n_curtidas: "101523"
 
     },
 

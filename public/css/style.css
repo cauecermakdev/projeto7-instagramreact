@@ -401,14 +401,16 @@ body {
   color:#333333;
 }
 
-.sidebar .usuario > div:first-child{
+.sidebar .usuario > div > div:first-child{
   display:flex;
   align-items: center;
 }
 
-.sidebar .usuario{
+.sidebar .usuario > div:first-child{
   display:flex;
   justify-content: space-between;
+  align-items: center;
+  width:100%;
 }
 
 .acoes div:first-child ion-icon:nth-child(2){

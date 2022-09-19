@@ -15,10 +15,9 @@ export default function Corpo(){
 
         <div className="fundo-mobile">
             <ion-icon name="home"></ion-icon>
-            <ion-icon name="search-outline"></ion-icon> página deve ser componentizada em arquivos com React, import/
+            <ion-icon name="search-outline"></ion-icon> 
         </div>
 
     </div>
-
     );
 }

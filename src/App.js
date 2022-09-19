@@ -1,18 +1,11 @@
-/* import Corpo from './Corpo'
-import NavBar from './NavBar' */
-/* 
-import ReactDOM from "react-dom";
+import Corpo from './Corpo'
+import NavBar from './NavBar' 
 
 export default function App(){
-
-    return(
+    return (
         <div>
             <NavBar/>
             <Corpo/> 
         </div>
     );
 }
-
-ReactDOM.render(<App />, document.querySelector(".root")); */
-
-
